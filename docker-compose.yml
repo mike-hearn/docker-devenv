@@ -1,0 +1,21 @@
+version: '2.1'
+services:
+  dev:
+    build:
+      context: .
+      args:
+        - username=${DEVUSER:-defaultuser}
+        - publickey=${PUBLIC_KEY}
+    ports:
+      - "44422:22"
+      - "44433/udp:44433/udp"
+    volumes:
+      # Sibling docker containers
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+      # Separate .ssh from overall home volume since authorized_keys is built into the DockerFile
+      - "/home/${DEVUSER:-defaultuser}/.ssh"
+
+      # Shared volume between in container home folder & host home folder
+      - "/home/${DEVUSER:-defaultuser}:/home/${DEVUSER:-defaultuser}"
+    hostname: awesomeserver
