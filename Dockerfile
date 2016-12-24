@@ -4,6 +4,8 @@ FROM debian:unstable
 RUN apt-get update
 RUN apt-get install -y \
     autojump \
+    build-essential \
+    cmake \
     curl \
     dnsutils \
     git \
@@ -11,6 +13,8 @@ RUN apt-get install -y \
     locales \
     mosh \
     postgresql-client \
+    python \
+    python-dev \
     silversearcher-ag \
     ssh \
     sudo \
@@ -23,6 +27,10 @@ RUN curl -sSL https://get.docker.com/ | sh
 # Install Docker Compose
 RUN curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 RUN chmod +x /usr/local/bin/docker-compose
+
+# Install Node.js and associated libraries
+RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+RUN apt-get update && apt-get install -y nodejs
 
 # Set the locale
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
