@@ -1,36 +1,70 @@
 FROM debian:unstable
 
 # Install all base utilities
-RUN apt-get update
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
     autojump \
+    autoconf \
+    automake \
     build-essential \
     cmake \
     curl \
     dnsutils \
     git \
     htop \
+    ipython \
+    ipython3 \
+    libfontconfig \
+    libjpeg-dev \
+    libpq-dev \
     locales \
+    man \
     mosh \
-    postgresql-client \
+    neovim \
+    postgresql \
     python \
     python-dev \
+    python-pip \
+    python3-dev \
+    python3-pip \
+    ruby \
+    ruby-dev \
     silversearcher-ag \
     ssh \
     sudo \
     tmux \
-    vim-nox
+    tree \
+    vim-nox \
+    zlib1g-dev
+
+# Install python libraries
+RUN pip install \
+    docker-compose \
+    flake8 \
+    isort \
+    neovim \
+    pylint \
+    virtualenv \
+    yapf
+RUN pip3 install \
+    docker-compose \
+    flake8 \
+    isort \
+    neovim \
+    pylint \
+    virtualenv \
+    yapf
+
+# Install Ruby libraries
+RUN gem install compass
+RUN gem install tmuxinator
 
 # Install Docker
 RUN curl -sSL https://get.docker.com/ | sh
 
-# Install Docker Compose
-RUN curl -L "https://github.com/docker/compose/releases/download/1.9.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-RUN chmod +x /usr/local/bin/docker-compose
-
 # Install Node.js and associated libraries
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN apt-get update && apt-get install -y nodejs
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 
 # Set the locale
 RUN localedef -i en_US -f UTF-8 en_US.UTF-8
@@ -58,5 +92,4 @@ RUN sed -ri 's/\#?PasswordAuthentication\s*yes/PasswordAuthentication\tno/g' /et
 RUN echo PermitRootLogin no >> /etc/ssh/sshd_config
 
 CMD service ssh restart && \
-    mosh-server && \
     tail -f /dev/null
