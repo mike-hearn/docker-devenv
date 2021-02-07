@@ -30,7 +30,6 @@ RUN brew install direnv
 RUN brew install dive
 RUN brew install docker-completion
 RUN brew install docker-compose
-RUN brew install docker-compose-completion
 RUN brew install docker-machine
 RUN brew install docutils
 RUN brew install elixir
