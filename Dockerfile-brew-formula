@@ -2,8 +2,6 @@ FROM homebrew/brew
 
 USER linuxbrew
 
-RUN brew update
-
 RUN brew install \
 	ansible \
 	aria2 \
