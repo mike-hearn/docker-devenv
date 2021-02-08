@@ -93,7 +93,6 @@ RUN brew install \
 	mesa \
 	miniserve \
 	moreutils \
-	mosh --HEAD \
 	most \
 	mozjpeg \
 	mp4v2 \
@@ -166,7 +165,6 @@ RUN brew install \
 	todo-txt \
 	tree \
 	typescript \
-	unrar \
 	vim \
 	watchexec \
 	weechat \
@@ -180,3 +178,6 @@ RUN brew install \
 	z \
 	zsh \
 	zsh-completions
+
+RUN brew install \
+	mosh --HEAD
