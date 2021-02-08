@@ -130,7 +130,6 @@ RUN brew install \
 	readline \
 	redis \
 	remake \
-	rename \
 	restic \
 	rhash \
 	ripgrep \
