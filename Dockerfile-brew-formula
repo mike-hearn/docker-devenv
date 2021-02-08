@@ -4,178 +4,179 @@ USER linuxbrew
 
 RUN brew update
 
-RUN brew install ansible
-RUN brew install aria2
-RUN brew install autoconf
-RUN brew install automake
-RUN brew install awscli
-RUN brew install b3sum
-RUN brew install bash
-RUN brew install bash-completion
-RUN brew install bat
-RUN brew install blackbox
-RUN brew install caddy
-RUN brew install cfssl
-RUN brew install cheat
-RUN brew install circleci
-RUN brew install cjbassi/ytop/ytop
-RUN brew install cmake
-RUN brew install colordiff
-RUN brew install cowsay
-RUN brew install cscope
-RUN brew install dbcli/tap/litecli
-RUN brew install ddclient
-RUN brew install diff-so-fancy
-RUN brew install direnv
-RUN brew install dive
-RUN brew install docker-completion
-RUN brew install docker-compose
-RUN brew install docker-machine
-RUN brew install docutils
-RUN brew install elixir
-RUN brew install emacs
-RUN brew install erlang
-RUN brew install exa
-RUN brew install fd
-RUN brew install fdupes
-RUN brew install ffmpeg
-RUN brew install fftw
-RUN brew install fish
-RUN brew install fribidi
-RUN brew install fswatch
-RUN brew install fx
-RUN brew install fzf
-RUN brew install gatsby-cli
-RUN brew install gcc
-RUN brew install gh
-RUN brew install gifsicle
-RUN brew install git
-RUN brew install git-delta
-RUN brew install git-lfs
-RUN brew install glib
-RUN brew install global
-RUN brew install gnupg
-RUN brew install gnutls
-RUN brew install go
-RUN brew install grip
-RUN brew install gron
-RUN brew install harfbuzz
-RUN brew install htop
-RUN brew install http-server
-RUN brew install httrack
-RUN brew install hugo
-RUN brew install icdiff
-RUN brew install imagemagick
-RUN brew install iperf3
-RUN brew install ipfs
-RUN brew install irssi
-RUN brew install jdupes
-RUN brew install jid
-RUN brew install jpegoptim
-RUN brew install jq
-RUN brew install jump
-RUN brew install kubernetes-cli
-RUN brew install lame
-RUN brew install lazydocker
-RUN brew install lazygit
-RUN brew install leptonica
-RUN brew install less
-RUN brew install libheif
-RUN brew install librsvg
-RUN brew install libvpx
-RUN brew install lsd
-RUN brew install lua
-RUN brew install luarocks
-RUN brew install mackup
-RUN brew install mad
-RUN brew install markdown
-RUN brew install mesa
-RUN brew install miniserve
-RUN brew install moreutils
-RUN brew install mosh --HEAD
-RUN brew install most
-RUN brew install mozjpeg
-RUN brew install mp4v2
-RUN brew install nativefier
-RUN brew install ncdu
-RUN brew install neovim
-RUN brew install nmap
-RUN brew install nnn
-RUN brew install node
-RUN brew install nodenv
-RUN brew install numpy
-RUN brew install nvm
-RUN brew install openjdk
-RUN brew install openssh
-RUN brew install optipng
-RUN brew install p7zip
-RUN brew install pandoc
-RUN brew install par2
-RUN brew install pass
-RUN brew install pass-otp
-RUN brew install perl
-RUN brew install pgcli
-RUN brew install pipenv
-RUN brew install pngcrush
-RUN brew install pngquant
-RUN brew install postgresql
-RUN brew install potrace
-RUN brew install pre-commit
-RUN brew install prettier
-RUN brew install pstree
-RUN brew install pyenv
-RUN brew install python
-RUN brew install python-yq
-RUN brew install r
-RUN brew install rancher-cli
-RUN brew install rbenv
-RUN brew install rclone
-RUN brew install readline
-RUN brew install redis
-RUN brew install remake
-RUN brew install rename
-RUN brew install restic
-RUN brew install rhash
-RUN brew install ripgrep
-RUN brew install rsync
-RUN brew install rtmpdump
-RUN brew install rust
-RUN brew install shellcheck
-RUN brew install shfmt
-RUN brew install sox
-RUN brew install sqlite
-RUN brew install sshfs
-RUN brew install starship
-RUN brew install stow
-RUN brew install svgo
-RUN brew install syncthing
-RUN brew install sysbench
-RUN brew install systemd
-RUN brew install terraform
-RUN brew install terraform-inventory
-RUN brew install tesseract
-RUN brew install texi2html
-RUN brew install the_silver_searcher
-RUN brew install tidy-html5
-RUN brew install tig
-RUN brew install tldr
-RUN brew install tmux
-RUN brew install tmux-mem-cpu-load
-RUN brew install tmuxinator-completion
-RUN brew install todo-txt
-RUN brew install tree
-RUN brew install typescript
-RUN brew install unrar
-RUN brew install vim
-RUN brew install watchexec
-RUN brew install weechat
-RUN brew install wget
-RUN brew install wireguard-go
-RUN brew install wireguard-tools
-RUN brew install xvid
-RUN brew install yarn
-RUN brew install youtube-dl
-RUN brew install yq
-RUN brew install z
-RUN brew install zsh
-RUN brew install zsh-completions
+RUN brew install \
+	ansible \
+	aria2 \
+	autoconf \
+	automake \
+	awscli \
+	b3sum \
+	bash \
+	bash-completion \
+	bat \
+	blackbox \
+	caddy \
+	cfssl \
+	cheat \
+	circleci \
+	cjbassi/ytop/ytop \
+	cmake \
+	colordiff \
+	cowsay \
+	cscope \
+	dbcli/tap/litecli \
+	ddclient \
+	diff-so-fancy \
+	direnv \
+	dive \
+	docker-completion \
+	docker-compose \
+	docker-machine \
+	docutils \
+	elixir \
+	emacs \
+	erlang \
+	exa \
+	fd \
+	fdupes \
+	ffmpeg \
+	fftw \
+	fish \
+	fribidi \
+	fswatch \
+	fx \
+	fzf \
+	gatsby-cli \
+	gcc \
+	gh \
+	gifsicle \
+	git \
+	git-delta \
+	git-lfs \
+	glib \
+	global \
+	gnupg \
+	gnutls \
+	go \
+	grip \
+	gron \
+	harfbuzz \
+	htop \
+	http-server \
+	httrack \
+	hugo \
+	icdiff \
+	imagemagick \
+	iperf3 \
+	ipfs \
+	irssi \
+	jdupes \
+	jid \
+	jpegoptim \
+	jq \
+	jump \
+	kubernetes-cli \
+	lame \
+	lazydocker \
+	lazygit \
+	leptonica \
+	less \
+	libheif \
+	librsvg \
+	libvpx \
+	lsd \
+	lua \
+	luarocks \
+	mackup \
+	mad \
+	markdown \
+	mesa \
+	miniserve \
+	moreutils \
+	mosh --HEAD \
+	most \
+	mozjpeg \
+	mp4v2 \
+	nativefier \
+	ncdu \
+	neovim \
+	nmap \
+	nnn \
+	node \
+	nodenv \
+	numpy \
+	nvm \
+	openjdk \
+	openssh \
+	optipng \
+	p7zip \
+	pandoc \
+	par2 \
+	pass \
+	pass-otp \
+	perl \
+	pgcli \
+	pipenv \
+	pngcrush \
+	pngquant \
+	postgresql \
+	potrace \
+	pre-commit \
+	prettier \
+	pstree \
+	pyenv \
+	python \
+	python-yq \
+	r \
+	rancher-cli \
+	rbenv \
+	rclone \
+	readline \
+	redis \
+	remake \
+	rename \
+	restic \
+	rhash \
+	ripgrep \
+	rsync \
+	rtmpdump \
+	rust \
+	shellcheck \
+	shfmt \
+	sox \
+	sqlite \
+	sshfs \
+	starship \
+	stow \
+	svgo \
+	syncthing \
+	sysbench \
+	systemd \
+	terraform \
+	terraform-inventory \
+	tesseract \
+	texi2html \
+	the_silver_searcher \
+	tidy-html5 \
+	tig \
+	tldr \
+	tmux \
+	tmux-mem-cpu-load \
+	tmuxinator-completion \
+	todo-txt \
+	tree \
+	typescript \
+	unrar \
+	vim \
+	watchexec \
+	weechat \
+	wget \
+	wireguard-go \
+	wireguard-tools \
+	xvid \
+	yarn \
+	youtube-dl \
+	yq \
+	z \
+	zsh \
+	zsh-completions
