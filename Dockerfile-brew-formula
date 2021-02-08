@@ -34,7 +34,6 @@ RUN brew install \
 	docker-machine \
 	docutils \
 	elixir \
-	emacs \
 	erlang \
 	exa \
 	fd \
