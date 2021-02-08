@@ -122,7 +122,6 @@ RUN brew install \
 	pstree \
 	pyenv \
 	python \
-	python-yq \
 	r \
 	rancher-cli \
 	rbenv \
@@ -170,7 +169,6 @@ RUN brew install \
 	xvid \
 	yarn \
 	youtube-dl \
-	yq \
 	z \
 	zsh \
 	zsh-completions
